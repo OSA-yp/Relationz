@@ -176,7 +176,6 @@
 
 .try-button {
   /* Try it for free */
-  position: absolute;
   top: 0;
   right: 0;
   font-family: Gilroy;
@@ -193,6 +192,7 @@
 }
 
 .try-button_color_blue {
+  position: absolute;
   background: #1943EF;
 }
 .try-button_color_green {
@@ -275,6 +275,166 @@ color: #73738D;
   top: 436px;
   left: 0;
 }
+
+.free-start {
+  border-radius: 8.32px;
+  height: 123.36px;
+  background: #FFFFFF;
+  box-shadow: 0px 13.8611px 55.4444px #F2F5FA;
+  padding: 0 22px;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 212px;  /*        ------------------- временно*/
+}
+
+.free-start__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 0;
+  margin-top: 10px;
+}
+
+.free-start__content-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.free-start__header {
+  /* Form better relationships with everyone */
+  margin: 0;
+  padding: 0;
+  font-family: Gilroy-bold;
+  font-size: 24.95px;
+  line-height: 30px;
+  color: #222222;
+}
+
+.free-start__note {
+  /* Start your free 14 days trial. */
+  margin: 5px 0 0 0;
+  padding: 0;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11.0889px;
+  line-height: 150%;
+  color: #73738D;
+}
+
+.free-start__circle {
+  position: absolute;
+  top: -11px;
+  left: -34px;
+  z-index: 1;
+  width: 61px;
+  height: 61px;
+}
+
+
+.talks-about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 464px;
+  /* border: 1px solid green; */
+  margin-top: 212px;  /*        ------------------- временно*/
+}
+
+.talks-about-us__header {
+  /* Что о нас говорят пользователи */
+  font-family: Gilroy-bold;
+  font-size: 24.95px;
+  line-height: 30px;
+  color: #222222;
+  margin: 0;
+  padding: 0;
+}
+
+.customer-qoute-card {
+  /* Rectangle */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  z-index: 5;
+  width: 501.77px;
+  height: 301.48px;
+  background: #FFFFFF;
+  box-shadow: 0px 13.8611px 55.4444px #F2F5FA;
+  border-radius: 8.31667px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+}
+
+.talks-about-us__customer-name {
+  /* Michelle Johnson, Australia */
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.5542px;
+  line-height: 17px;
+  color: #222222;
+  margin: 59px 0 0 0;
+}
+
+.talks-about-us__qoute-sign {
+  /* Component 3 */
+  width: 26.65px;
+  height: 16.63px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.talks-about-us__qoute-text {
+  /* The multichannel sales engagement platform which automates personal email outreach, calls, and tasks, while Sales can focus on what really matters - closing while Sales can focus on what really matters - closing */
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.5542px;
+  line-height: 150%;
+  text-align: center;
+  color: #73738D;
+  margin: 0;
+}
+
+.talks-about-us__customer-sign {
+  /* Image */
+  width: 110.89px;
+  height: 49.9px;
+  margin-top: 17px;
+  margin-bottom: 27px;
+}
+
+.talks-about-us__scroller {
+  /* margin-top: 33px; */
+}
+
+.talks-about-us__marine-dot-box {
+  position: absolute;
+  right: -9px;
+  bottom: -25px;
+  z-index: 1;
+}
+
+.customer-photo {
+  position: absolute;
+  left: -50px;
+}
+
+.customer-photo_pos_center {
+  left: -250px;
+}
+
 
 
 .footer {
