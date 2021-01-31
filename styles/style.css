@@ -174,6 +174,12 @@
   text-indent: 17px;
 }
 
+.mail-group__email-id:focus {
+  outline: none;
+  }
+
+
+
 .try-button {
   /* Try it for free */
   top: 0;
@@ -189,7 +195,13 @@
   height: 42px;
   border: none;
   z-index: 3;
+
 }
+
+.try-button:focus {
+  outline: none;
+  }
+
 
 .try-button_color_blue {
   position: absolute;
