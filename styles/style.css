@@ -1,3 +1,7 @@
+.page {
+  background-color: #E5E5E5;
+}
+
 .root {
   width: 998px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -11,9 +15,14 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background: #c5dbaf;
+  background: #ffffff;
   color: red;
+  position: relative;
 }
+.main-content {
+  position: relative;
+}
+
 
 .header {
   /* Rectangle */
@@ -27,16 +36,19 @@
   background: #FFFFFF;
 }
 
-.header__logo {
+.logo {
   /* Relationz */
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24.1183px;
-  line-height: 29px;
+  font-family: Gilroy-bold;
   color: #222222;
   margin: 0;
   }
+
+  .logo_pos_header {
+  font-size: 24.1183px;
+  line-height: 29px;
+  }
+
+
 
 .header__circle {
 
@@ -87,10 +99,17 @@
   background: #FFFFFF;
 }
 
+.mail-and-phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 65px;
+
+}
+
 .mail-group {
   width: 429px;
   height: 279px;
-  margin-top: 142px;
   position: relative;
 }
 
@@ -155,7 +174,7 @@
   text-indent: 17px;
 }
 
-.mail-group__try-button{
+.try-button {
   /* Try it for free */
   position: absolute;
   top: 0;
@@ -166,7 +185,6 @@
   font-size: 11.0889px;
   line-height: 13px;
   color: #FFFFFF;
-  background: #1943EF;
   border-radius: 33.9597px;
   width: 156px;
   height: 42px;
@@ -174,10 +192,20 @@
   z-index: 3;
 }
 
+.try-button_color_blue {
+  background: #1943EF;
+}
+.try-button_color_green {
+  background: #26C296;
+}
+
+
+
 .mail-group__benefits {
   margin: 0;
   margin-top: 14px;
   padding: 0;
+  list-style-type: none;
   display: flex;
   justify-content: flex-start;
 }
@@ -207,20 +235,129 @@ font-size: 11.0889px;
 line-height: 150%;
 /* identical to box height, or 17px */
 color: #73738D;
+}
 
+.phone {
+  position: relative;
 
 }
 
+.phone__main-img {
+  position: relative;
+  width: 230px;
+  height: 459px;
+  z-index: 3;
+  padding-right: 10px;
+  /* box-shadow: 0px 2.77px 27px 0px #F2F5FA; */
+  /* x-смещение y-смещение радиус-размытия растяжение цвет  */
+  filter: drop-shadow(0px 6.48945px 25.9578px #F2F5FA);
 
+}
 
+.phone__top-circle {
+  position: absolute;
+  z-index: 1;
+  width: 40.2px;
+  height: 40.2px;
+  top: -7px;
+  left: -7px;
+}
 
+.phone__bottom-circle {
+  position: absolute;
+  z-index: 1;
+  bottom: -0px;
+  right: -10px;
+}
 
-
+.main-content__left-circle {
+  position: absolute;
+  top: 436px;
+  left: 0;
+}
 
 
 .footer {
-  height: 100px;
   width: 800px;
-  border: 1px solid rgb(176, 32, 219);
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 70px 0 0;
+}
+
+.footer__column {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 8px 0 17px;
+}
+
+.footer__column-heading {
+  margin: 0 0 4.15px 0;
+  padding: 0;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16.6333px;
+  line-height: 13px;
+  color: #222222;
+}
+
+.footer__column-links {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+.footer__column-link {
+  text-decoration: none;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11.0889px;
+  line-height: 13px;
+  color: #73738D;
+  margin: 12.48px 0 0 0;
+}
+
+.footer__circle {
+  position: absolute;
+  right: 0;
+  bottom: 104px;
+}
+
+.logo_pos_footer {
+  /* Relationz */
+  margin: 88px auto 0;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16.6531px;
+  line-height: 20px;
+  /* identical to box height */
+  text-align: center;
+  color: #222222;
+}
+
+.footer__copyright {
+/* Copyright © 2010 - 2019 Relationz Ltd. All rights reserved. */
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-bottom: 30px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11.0889px;
+  line-height: 13px;
+  text-align: center;
+  color: #73738D;
+}
